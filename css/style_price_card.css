@@ -1,0 +1,107 @@
+@import url(root_colors.css);
+
+:root{
+  --product-card-bg-color:var(--light-gray);
+  --overlay-bg-color:var(--tin);
+}
+
+.product-card {
+  display: inline-block;
+  padding: 0.7em;
+  margin-bottom: 0.3em;
+  max-width: 33%;
+  background-color: var(--product-card-bg-color);
+}
+
+.product-card__container img {
+  width: 100%;
+}
+
+.product-card__content {
+  position: relative;
+  margin: 0.5em;
+}
+
+.product-card__price {
+  margin-top: 0.3em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+
+.product-card__container {
+  position: relative;
+}
+
+.overlay-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-color: var(--overlay-bg-color);
+  text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.product-card__container:hover .overlay-block {
+  opacity: 1;
+}
+
+.button-add_into_bag {
+  position: relative;
+  padding: 0.8em;
+  top: 50%;
+  border: none;
+  background: var(--transparent-white);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button-add_into_bag:hover {
+  background-color: var(--transparent-yellow);
+}
+
+.list-size__item {
+  display: inline-block;
+  margin-right: 1em;
+  width: 3em;
+  background-color: var(--transparent-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icons_aligin-right {
+  text-align: right;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width : 1350px) {
+  .product-card {
+    max-width: 49%;
+  }
+}
+
+@media screen and (max-width : 1000px) {
+  .tablinks_category {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width : 820px) {
+  .nav_left-block {
+    display: none;
+  }
+
+  .category__wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .product-card {
+    max-width: 100%;
+  }
+}
