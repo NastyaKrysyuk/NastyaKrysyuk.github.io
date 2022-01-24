@@ -1,7 +1,7 @@
 //получаем тип одежды из кваери параметров адресной строки
 //которые туда попадают при клике по ссылке выпадающего меню в хедер меню на индекс странице
 const clothesType = window.location.href.split('=')[1];
-
+console.log(window.location)
 function openContent(evt, content_clothes) {
   var i, tabcontent, tablinks;
   
@@ -22,7 +22,7 @@ function openContent(evt, content_clothes) {
   } else {
       //добавляем класс когда функция вызвана при переходе с главное из хедер меню
       document.getElementById(`${clothesType}-sidebar`).className += " active_category";
-  }
+  } 
 }
 openContent(null,clothesType)
 

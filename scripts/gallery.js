@@ -25,10 +25,10 @@ $(function () {
         $(".hover-buttons").css("visibility", "visible");
     });
 
-    $(".overlay").click(function () {
-        $(".overlay").removeClass("active");
-        $(".open-img").removeClass("active");
-        $(".full-image").hide();
-        $(".hover-buttons").css("visibility", "visible");
-    });
+    // $(".overlay").click(function () {
+    //     $(".overlay").removeClass("active");
+    //     $(".open-img").removeClass("active");
+    //     $(".full-image").hide();
+    //     $(".hover-buttons").css("visibility", "visible");
+    // });
 });

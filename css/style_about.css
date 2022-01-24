@@ -56,8 +56,8 @@
 
 .concept {
   position: absolute;
-  right: 1%;
-  top: 87%;
+  bottom: 0;
+  right: 0;
 }
 
 .img_display_block {
@@ -68,7 +68,7 @@
 /*gallary*/
 
 .gallery__title {
-  margin: 4rem;
+  margin: 2rem;
   color: var(--transparent-yellow);
   text-transform: uppercase;
   font-size: 9em;
@@ -353,10 +353,6 @@ transition: transform 0.5s ease-in-out
 }
 
 @media screen and (max-width : 900px) {
-  .concept {
-    top: 79%;
-  }
-
   .concept__list-item,
   .gallery__title {
     font-size: 11vw;
